@@ -1,0 +1,500 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: Roboto Slab;
+	letter-spacing: 2.5px;
+}
+
+body {
+	width: 100%;
+	height: 100%
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-bottom: 20px;
+}
+
+.avm {
+	margin: 0;
+	padding: 0;
+	width: 10%;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	background-color: rgba(0,0,0,0.50);
+	z-index: 99;
+	text-align: center;
+}
+
+nav a {
+	position: relative;
+	display: inline-block;
+	font-size: 1.5em;
+	text-decoration: none;
+	color: white;
+	margin-left: 30px;
+	margin-right: 30px;
+	line-height: 80px;
+}
+
+.nav-item:hover {
+	color: rgba(255,255,255,0.50);
+	transition: all 1 ease;
+}
+
+.nav-item:focus {
+	font-weight: 900;
+	font-size: 1.6em;
+}
+
+.nav-item-home {
+	font-size: 0.8em;
+}
+
+.nav-item-home:hover {
+	color: rgba(255,255,255,0.50);
+	transition: all 1 ease;
+}
+
+.anders-top {
+	font-weight: 100;
+}
+
+.mogensen {
+	font-weight: 700;
+}
+
+.anders-midt {
+	font-weight: 100;
+}
+
+.section {
+	height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.headers {
+	color: white;
+	width: 100%;
+	text-align: center;
+	padding-top: 100px;
+	font-size: 5em;
+	padding-bottom: 25px
+}
+
+/* STARTSIDE */
+
+.startside {
+	background-image: url(Billeder1920/bg100.jpg);
+}
+
+.andersmogensen {
+	padding-top: 200px
+}
+
+.andersmogensentekst {
+	font-size: 2em;
+}
+
+.multimediedesigner {
+	font-weight: 300;
+}
+
+.under-udvikling {
+	font-size: .6em;
+}
+
+.header-start {
+	color: white;
+}
+
+.grid-startside {
+	display: grid;
+	width: 100%;
+	margin-top: 100px;
+	grid-gap: 50px;
+	grid-template-columns: auto 233px 233px 233px 233px auto;
+	grid-template-rows: 233px;
+	grid-template-areas: 
+	". portfolio cv om kontakt .";
+}
+
+.portfolio {
+	grid-area: portfolio;
+	background-image: url(Billeder1920/portfolio_1.png);
+	transition: all .75s ease
+}
+
+.portfolio:hover {
+	background-image: url(Billeder1920/portfolio_2.png)
+}
+
+.cv {
+	grid-area: cv;
+	background-image: url(Billeder1920/cv_1.png);
+	transition: all .75s ease
+}
+
+.cv:hover {
+	background-image: url(Billeder1920/cv_2.png)
+}
+
+.om {
+	grid-area: om;
+	background-image: url(Billeder1920/om_1.png);
+	transition: all .75s ease
+}
+
+.om:hover {
+	background-image: url(Billeder1920/om_2.png)
+}
+
+.kontakt {
+	grid-area: kontakt;
+	background-image: url(Billeder1920/kontakt_1.png);
+	transition: all .75s ease
+}
+
+.kontakt:hover {
+	background-image: url(Billeder1920/kontakt_2.png)
+}
+
+/* STARTSIDE */
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* PORTFOLIO */
+
+.portfolio-wrapper {
+	background-image: url(Billeder1920/bg95.jpg);
+}
+
+.grid-projekter div:nth-child(even) {
+	background-color: rgba(78,79,83,0.50);
+	border-radius: 10px
+}
+
+.grid-projekter div:nth-child(odd) {
+	background-color: rgba(78,79,83,0.50);
+	border-radius: 10px
+}
+
+.grid-projekter {
+	display: grid;
+	width: 100%;
+	margin-top: -5px;
+	grid-gap: 20px;
+	grid-template-columns: auto 300px 300px 300px 300px auto;
+	grid-template-rows: 300px 300px;
+	grid-template-areas: 
+	". projekt1 projekt2 projekt3 projekt4 ."
+	". projekt5 projekt6 projekt7 projekt8 .";
+}
+
+.projekt1 {
+	grid-area: projekt1;
+	background-image: url(Billeder1920/bhs_1.png);
+	transition: all 1s ease
+}
+
+.projekt1:hover {
+	background-image: url(Billeder1920/bhs_2.png)
+}
+
+.projekt2 {
+	grid-area: projekt2;
+	background-image: url(Billeder1920/foto_1.png);
+	transition: all 1s ease
+}
+
+.projekt2:hover {
+	grid-area: projekt2;
+	background-image: url(Billeder1920/foto_2.png)
+}
+
+.projekt3 {
+	grid-area: projekt3;
+	background-image: url(Billeder1920/inno_1.png);
+	transition: all 1s ease
+}
+
+.projekt3:hover {
+	grid-area: projekt3;
+	background-image: url(Billeder1920/inno_2.png)
+}
+
+.projekt4 {
+	grid-area: projekt4;
+	background-image: url(Billeder1920/freelance_1.png);
+	transition: all 1s ease
+}
+
+.projekt4:hover {
+	grid-area: projekt4;
+	background-image: url(Billeder1920/freelance_2.png)
+}
+
+.projekt5 {
+	grid-area: projekt5
+}
+
+.projekt6 {
+	grid-area: projekt6
+}
+
+.projekt7 {
+	grid-area: projekt7
+}
+
+.projekt8 {
+	grid-area: projekt8
+}
+
+/* PORTFOLIO */
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* CV */
+
+.cv-wrapper {
+	background-image: url(Billeder1920/bg100.jpg);
+}
+
+.streg {
+	display: inline-block;
+	margin-left: 844px;
+	margin-top: 30px;
+}
+
+.boks-tekst {
+	margin: -14px auto;
+	width: 1620px;
+	height: 659px;
+	background-color: rgba(33,32,38,0.75);
+	border-radius: 10px;
+}
+
+.tekst-align {
+	margin-top: -639px;
+}
+
+.overskrifter-cv {
+	font-size: 1.3em
+}
+
+.joberfaring {
+	color: white;
+	margin-left: 30px;
+	padding-top: 20px;
+}
+
+.uddannelse {
+	color: white;
+	margin-left: 876px;
+	margin-top: -630px
+}
+
+.andet {
+	color: white;
+	margin-left: 876px;
+	margin-top: 30px;
+}
+
+.br {
+	line-height: 20px;
+	list-style: none;
+}
+
+.br2 {
+	line-height: 40px;
+	list-style: none;
+}
+
+.brx {
+	line-height: 15px;
+	color: rgba(0,0,0,0.00)
+}
+
+.brxx {
+	line-height: 5px;
+	color: rgba(0,0,0,0.00)
+}
+
+.arbejdsopgaver-joberfaring {
+	font-style: italic;
+	font-weight: 100;
+	font-size: 0.8em;
+}
+
+.uddannelse-liste {
+	list-style: none;
+}
+
+.headers-cv {
+	line-height: 40px;
+}
+
+.aarstal {
+	font-weight: 100;
+	font-size: .9em;
+}
+
+ul {
+	font-size: 0.9em;
+}
+
+.tekst-cv {
+	font-weight: 400;
+	font-size: .9em;
+}
+
+#verikal-linje {
+	grid-area: vertikal-linje;
+	width: 4px;
+	height: 300px;
+	background-color: rgba(0,0,0,0.75)
+}
+
+/* CV */
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* OM */
+
+.om-wrapper {
+	background-image: url(Billeder1920/bg95.jpg);
+}
+
+.boks-tekst-om {
+	margin: -14px auto;
+	width: 1300px;
+	height: 659px;
+	background-color: rgba(33,32,38,0.75);
+	border-radius: 10px;
+}
+
+.info {
+	margin-left: 967px;
+	color: white;
+}
+
+.streg-om {
+	display: inline-block;
+	margin-left: 935px;
+	margin-top: 30px;
+}
+
+.biografi-tekst-overskrift {
+	margin-top: -639px;
+}
+
+.biografi-tekst {
+	font-weight: 300;
+	font-size: 0.8em;
+}
+
+.info-tekst-overskrift {
+	margin-top: -584px;
+}
+
+/* OM */
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* KONTAKT */
+
+.kontakt-wrapper {
+	background-image: url(Billeder1920/bg100.jpg);
+}
+
+.boks-tekst-kontakt {
+	margin-top: 709px;
+	margin-left: 460px;
+	width: 1000px;
+	height: 530px;
+	background-color: rgba(33,32,38,0.75);
+	border-radius: 10px;
+}
+
+.kontakt-tekst {
+	font-weight: 300;
+	font-size: 0.8em;
+	line-height: 30px
+}
+
+.streg2 {
+	position: absolute;
+	margin-left: 30px;
+	margin-top: 100px;
+	padding: 0;
+}
+
+.tlf {
+	position: absolute;
+	margin-left: 30px;
+	margin-top: 130px;
+}
+
+.tlf-tekst {
+	position: absolute;
+	margin-left: 30px;
+	margin-top: 185px;
+	font-weight: 400;
+	color: white;
+}
+
+.mail {
+	position: absolute;
+	margin-left: 30px;
+	margin-top: 230px
+}
+
+.mail-tekst {
+	position: absolute;
+	margin-left: 30px;
+	margin-top: 285px;
+	font-weight: 400;
+	color: white;
+}
+
+.facebook {
+	position: absolute;
+	margin-left: 30px;
+	margin-top: 330px;
+}
+
+.facebook-tekst {
+	position: absolute;
+	margin-left: 30px;
+	margin-top: 385px;
+	font-weight: 400;
+	color: white;
+}
+
+.twitter {
+	position: absolute;
+	margin-left: 30px;
+	margin-top: 430px
+}
+
+.twitter-tekst {
+	position: absolute;
+	margin-left: 30px;
+	margin-top: 485px;
+	font-weight: 400;
+	color: white;
+}

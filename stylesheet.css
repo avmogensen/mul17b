@@ -1,0 +1,532 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	width: 100%;
+	font-family: Roboto Slab;
+	letter-spacing: 2.5px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-bottom: 20px;
+}
+
+.avm {
+	margin: 0;
+	padding: 0;
+	width: 10%;
+}
+
+nav {
+	position: fixed;
+	width: 1280px;
+	height: 53px;
+	background-color: rgba(0,0,0,0.50);
+	z-index: 99;
+	text-align: center;
+}
+
+nav a {
+	position: relative;
+	display: inline-block;
+	font-size: .95em;
+	text-decoration: none;
+	color: white;
+	margin-left: 17px;
+	margin-right: 17px;
+	line-height: 55px;
+}
+
+.nav-item:hover {
+	color: rgba(255,255,255,0.50);
+	transition: all 1 ease;
+}
+
+.nav-item:focus {
+	font-weight: 900;
+	font-size: 1.05em;
+}
+
+.nav-item-home {
+	font-size: 0.8em;
+}
+
+.nav-item-home:hover {
+	color: rgba(255,255,255,0.50);
+	transition: all 1 ease;
+}
+
+.anders-top {
+	font-weight: 100;
+	font-size: .6em;
+}
+
+.mogensen {
+	font-weight: 700;
+	font-size: .6em;
+}
+
+.anders-midt {
+	font-weight: 100;
+}
+
+.section {
+	height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.headers {
+	color: white;
+	width: 100%;
+	text-align: center;
+	padding-top: 68px;
+	font-size: 3.375em;
+	padding-bottom: 25px
+}
+
+/* STARTSIDE */
+
+.startside {
+	background-image: url(Billeder/bg100.jpg);
+}
+
+.andersmogensen {
+	padding-top: 125px
+}
+
+.andersmogensentekst {
+	font-size: 1.3em;
+	line-height: -20px
+}
+
+.multimediedesigner {
+	font-weight: 300;
+	font-size: .6em;
+}
+
+.line-break {
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+.under-udvikling {
+	font-size: .6em;
+}
+
+.header-start {
+	color: white;
+}
+
+.grid-startside {
+	display: grid;
+	width: 100%;
+	margin-top: 60px;
+	grid-gap: 35px;
+	grid-template-columns: auto 155px 155px 155px 155px auto;
+	grid-template-rows: 155px;
+	grid-template-areas: 
+	". portfolio cv om kontakt .";
+}
+
+.portfolio {
+	grid-area: portfolio;
+	background-image: url(Billeder/portfolio_1.png);
+	transition: all .75s ease
+}
+
+.portfolio:hover {
+	background-image: url(Billeder/portfolio_2.png)
+}
+
+.cv {
+	grid-area: cv;
+	background-image: url(Billeder/cv_1.png);
+	transition: all .75s ease
+}
+
+.cv:hover {
+	background-image: url(Billeder/cv_2.png)
+}
+
+.om {
+	grid-area: om;
+	background-image: url(Billeder/om_1.png);
+	transition: all .75s ease
+}
+
+.om:hover {
+	background-image: url(Billeder/om_2.png)
+}
+
+.kontakt {
+	grid-area: kontakt;
+	background-image: url(Billeder/kontakt_1.png);
+	transition: all .75s ease
+}
+
+.kontakt:hover {
+	background-image: url(Billeder/kontakt_2.png)
+}
+
+/* STARTSIDE */
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* PORTFOLIO */
+
+.portfolio-wrapper {
+	background-image: url(Billeder/bg95.jpg);
+}
+
+.grid-projekter div:nth-child(even) {
+	background-color: rgba(78,79,83,0.50);
+	border-radius: 10px
+}
+
+.grid-projekter div:nth-child(odd) {
+	background-color: rgba(78,79,83,0.50);
+	border-radius: 10px
+}
+
+.grid-projekter {
+	display: grid;
+	width: 100%;
+	margin-top: -5px;
+	grid-gap: 20px;
+	grid-template-columns: auto 200px 200px 200px 200px auto;
+	grid-template-rows: 200px 200px;
+	grid-template-areas: 
+	". projekt1 projekt2 projekt3 projekt4 ."
+	". projekt5 projekt6 projekt7 projekt8 .";
+}
+
+.projekt1 {
+	grid-area: projekt1;
+	background-image: url(Billeder/bhs_1.png);
+	transition: all 1s ease
+}
+
+.projekt1:hover {
+	background-image: url(Billeder/bhs_2.png)
+}
+
+.projekt2 {
+	grid-area: projekt2;
+	background-image: url(Billeder/foto_1.png);
+	transition: all 1s ease
+}
+
+.projekt2:hover {
+	grid-area: projekt2;
+	background-image: url(Billeder/foto_2.png)
+}
+
+.projekt3 {
+	grid-area: projekt3;
+	background-image: url(Billeder/inno_1.png);
+	transition: all 1s ease
+}
+
+.projekt3:hover {
+	grid-area: projekt3;
+	background-image: url(Billeder/inno_2.png)
+}
+
+.projekt4 {
+	grid-area: projekt4;
+	background-image: url(Billeder/freelance_1.png);
+	transition: all 1s ease
+}
+
+.projekt4:hover {
+	grid-area: projekt4;
+	background-image: url(Billeder/freelance_2.png)
+}
+
+.projekt5 {
+	grid-area: projekt5
+}
+
+.projekt6 {
+	grid-area: projekt6
+}
+
+.projekt7 {
+	grid-area: projekt7
+}
+
+.projekt8 {
+	grid-area: projekt8
+}
+
+/* PORTFOLIO */
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* CV */
+
+.cv-wrapper {
+	background-image: url(Billeder/bg100.jpg);
+}
+
+.stregcv {
+	position: absolute;
+	margin-left: 520px;
+	margin-top: 30px;
+}
+
+.boks-tekst {
+	margin: 650px auto;
+	width: 1090px;
+	height: 510px;
+	background-color: rgba(33,32,38,0.75);
+	border-radius: 10px;
+}
+
+.tekst-align {
+	margin-top: -639px;
+}
+
+.overskrifter-cv {
+	font-size: .9em;
+}
+
+.joberfaring {
+	position: absolute;
+	color: white;
+	margin-left: 20px;
+	margin-top: 5px
+}
+
+.uddannelse {
+	color: white;
+	margin-left: 550px;
+	padding-top: 5px
+}
+
+.andet {
+	color: white;
+	margin-left: 550px;
+	margin-top: 30px;
+}
+
+.br {
+	line-height: 5px;
+	list-style: none;
+}
+
+.br2 {
+	line-height: 40px;
+	list-style: none;
+}
+
+.brx {
+	line-height: 15px;
+	color: rgba(0,0,0,0.00)
+}
+
+.brxx {
+	line-height: 5px;
+	color: rgba(0,0,0,0.00)
+}
+
+.arbejdsopgaver-joberfaring {
+	font-style: italic;
+	font-weight: 100;
+	font-size: 0.6em;
+}
+
+.line-break2 {
+	margin-bottom: -10px;
+	margin-top: -10px;
+}
+
+.line-break4 {
+	margin-bottom: -5px;
+	margin-top: -5px;
+}
+
+.line-break3 {
+	margin-bottom: -20px;
+	margin-top: -20px;
+}
+
+.uddannelse-liste {
+	list-style: none;
+}
+
+.headers-cv {
+	line-height: 40px;
+}
+
+.aarstal {
+	font-weight: 100;
+	font-size: .6em;
+}
+
+ul {
+	font-size: 0.9em;
+}
+
+.tekst-cv {
+	font-weight: 400;
+	font-size: .6em;
+}
+
+#verikal-linje {
+	grid-area: vertikal-linje;
+	width: 4px;
+	height: 300px;
+	background-color: rgba(0,0,0,0.75)
+}
+
+/* CV */
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* OM */
+
+.om-wrapper {
+	background-image: url(Billeder/bg95.jpg);
+}
+
+.streg-biografi {
+	position: absolute;
+	margin-top: 35px;
+	margin-left: 625px;
+}
+
+.boks-tekst-om {
+	margin: 650px auto;
+	width: 890px;
+	height: 450px;
+	background-color: rgba(33,32,38,0.75);
+	border-radius: 10px;
+}
+
+.info {
+	margin-left: 650px;
+	padding-top: 5px;
+	color: white;
+}
+
+.streg-om {
+	display: inline-block;
+	margin-left: 935px;
+	margin-top: 30px;
+}
+
+.biografi-tekst-overskrift {
+	margin-top: -639px;
+}
+
+.biografi-tekst {
+	font-weight: 300;
+	font-size: 0.45em;
+	line-height: 30px
+}
+
+.info-tekst-overskrift {
+	margin-top: -584px;
+}
+
+/* OM */
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* KONTAKT */
+
+.kontakt-wrapper {
+	background-image: url(Billeder/bg100.jpg);
+}
+
+.boks-tekst-kontakt {
+	margin-top: 620px;
+	margin-left: 300px;
+	width: 700px;
+	height: 416px;
+	background-color: rgba(33,32,38,0.75);
+	border-radius: 10px;
+}
+
+.break-foresp {
+	margin-top: -20px;
+	margin-bottom: -20px;
+}
+
+.kontakt-tekst {
+	font-weight: 300;
+	font-size: 0.6em;
+	line-height: 30px
+}
+
+.streg2 {
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 80px;
+	padding: 0;
+}
+
+.tlf {
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 100px;
+}
+
+.tlf-tekst {
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 135px;
+	font-weight: 400;
+	color: white;
+}
+
+.mail {
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 180px
+}
+
+.mail-tekst {
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 215px;
+	font-weight: 400;
+	color: white;
+}
+
+.facebook {
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 260px;
+}
+
+.facebook-tekst {
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 295px;
+	font-weight: 400;
+	color: white;
+}
+
+.twitter {
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 340px
+}
+
+.twitter-tekst {
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 375px;
+	font-weight: 400;
+	color: white;
+}
